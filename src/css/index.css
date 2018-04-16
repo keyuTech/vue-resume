@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 500px) {
+  .page {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.page {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.page aside {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #9a9b98;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.7);
+  flex-shrink: 0;
+  background-color: #f1f1ee;
+}
+
+.page aside .upper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page aside .upper .menu-title {
+  padding: 20px;
+  text-align: left;
+}
+
+.page aside .menu-item {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.page aside .menu-item:hover {
+  background-color: #fff;
+  color: #7c7c7c;
+}
+
+.page aside .down .menu-item {
+  width: 100%;
+  position: relative;
+}
+
+.page aside .menu-item .circle {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid #00e6bf;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  margin-top: 9px;
+}
+
+.page aside .menu-item:nth-child(1) .circle {
+  border-color: #fb6c68;
+}
+
+.page aside .menu-item:nth-child(2) .circle {
+  border-color: #f8da34;
+}
+
+.page aside .menu-item:nth-child(3) .circle {
+  border-color: #328cd5;
+}
+
+.page aside .menu-item:nth-child(4) .circle {
+  border-color: #fb6c68;
+}
+
+.page main {
+  max-width: 800px;
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.7);
+  overflow: auto;
+  background-color: #fff;
+}
+
+.page main section {
+  margin: 20px 0;
+}
+
+.page main h1,
+.page main h2 {
+  margin-bottom: 10px;
+}
+
+
+
+.page main section h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.page main section.information {
+  text-align: center;
+}
+
+.page main .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page main .skills ul>li {
+  width: 48%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.page main .protfolio ul>li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.page main .protfolio .header .start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.page main .protfolio .header .keywords {
+  font-size: 16px;
+}
